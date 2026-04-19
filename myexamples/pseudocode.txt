@@ -1,0 +1,5 @@
+Pseudocode for a simple counter
+
+Initialize variable
+Increment by one
+display the count
