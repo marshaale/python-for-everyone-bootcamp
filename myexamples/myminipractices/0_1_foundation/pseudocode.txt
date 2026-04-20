@@ -1,0 +1,25 @@
+Ask user's name
+store in variable
+display user's name with greeting...
+
+
+Set count 0
+Increment by 1
+Increment by 10
+Display output
+
+Take user's order total price.
+check if its black friday
+    give the user ten percentage of discount.
+    re calculate the order price with discount.
+Display the order price.
+
+
+Ask user's to choose theme mode
+if its dark mode
+    change the site colors to dark theme mode.
+if its light mode
+    change the site colors to light theme mode.
+display theme colors.
+
+
