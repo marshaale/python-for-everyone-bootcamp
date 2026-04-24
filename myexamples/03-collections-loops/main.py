@@ -72,3 +72,36 @@ b = {3, 4, 5}
 print("A union B",a | b)
 print(a-b)
 print(a&b)
+
+person = {"name":"Maria","age":19}
+
+print(person)
+
+print(person["name"])
+print(person.get("age"))
+print(person.get("nationality","somalia"))
+
+person["nationality"] = "italy"
+
+print(person.get("nationality","somalia"))
+
+# print(person["dob"])
+
+del person["nationality"]
+person.pop("age")
+
+print(person)
+
+student = {"name":"Morgan","dob":2000,"address":{"city":"London","street":"124 KM House"},"scores":[95,88,67,79,82,100]}
+
+print(student["name"])
+
+print(student.get("email","no email"))
+
+student["email"] = "morgan@example.com"
+
+print(student)
+print("keys",len(student.keys()))
+print("Values",len(student.values()))
+
+print(type(student))
