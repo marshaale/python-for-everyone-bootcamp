@@ -105,3 +105,42 @@ print("keys",len(student.keys()))
 print("Values",len(student.values()))
 
 print(type(student))
+
+numbers = [1,2,3,4]
+# print each number in numbers
+print(numbers[0])
+print(numbers[1])
+print(numbers[2])
+print(numbers[3])
+# This is one of the problem loop solves
+for number in numbers:
+    print(number)
+
+for x in range(1,3):
+    print(x)
+
+colors = ["red", "blue", "green"]
+for color in colors:
+    print("Color",color)
+
+for char in "Hi!":
+    print(char)
+
+for i,number in enumerate(numbers):
+    print("index:",i,"number:",number)
+
+for i,color in enumerate(colors,1):
+    print("index:",i,"color:",color)
+
+mobile = {"name":"Samsung a10","year":2020,"type":"a series"}
+
+for key,value in mobile.items():
+    print(key,value)
+
+for key in mobile:
+    print(mobile[key])
+
+dataset = ((0,1,0),(1,1,0),(0,0,1))
+
+for a,b,c in dataset:
+    print(a,b,c)
