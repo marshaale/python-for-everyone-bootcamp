@@ -156,3 +156,17 @@ while line != "done":
     if line != "done":
         print("You said:",line,"and it's length is:",len(line))
 
+for x in range(5):
+    pass
+
+for i in [0,1,2,3,4]:
+    if i == 1:
+        print("Loop skips index:",i)
+        continue
+
+    if i == 3:
+        print("Loop stopped at index:",i)
+        break
+
+    print("index:",i)
+print("Full indexes",[0,1,2,3,4])

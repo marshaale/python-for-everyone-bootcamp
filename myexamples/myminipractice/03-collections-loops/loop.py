@@ -37,3 +37,24 @@ while number != 0:
         total += number
     else:
         print("total:",total)
+
+for n in range(20):
+    print(n)
+    if n == 5:
+        break
+
+for n in range(10):
+    if n == 3:
+        continue
+    print(n)
+
+if False:
+    pass
+
+user = {"name":"ahmed","role":"staff"}
+
+for key in user:
+    if user[key] == "staff":
+        print("Access denied")
+        break
+    print(key,user[key])
