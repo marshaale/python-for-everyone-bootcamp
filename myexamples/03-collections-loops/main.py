@@ -144,3 +144,15 @@ dataset = ((0,1,0),(1,1,0),(0,0,1))
 
 for a,b,c in dataset:
     print(a,b,c)
+
+number = 1
+while number <= 3:
+    print("number =",number)
+    number += 1
+
+line = ""
+while line != "done":
+    line = input("type a word, or 'done' to stop: ").strip().lower()
+    if line != "done":
+        print("You said:",line,"and it's length is:",len(line))
+

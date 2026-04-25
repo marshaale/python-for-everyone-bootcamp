@@ -23,3 +23,17 @@ for key,value in person.items():
 
 for key in sorted(person):
     print(key + ":",person[key])
+
+i = 0
+while i < 4:
+    print("i:",i)
+    i +=1
+
+total = 0
+number = 1
+while number != 0:
+    number = int(input("Enter a number to increment total or type 0 to quit: "))
+    if number != 0:
+        total += number
+    else:
+        print("total:",total)
