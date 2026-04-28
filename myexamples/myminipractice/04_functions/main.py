@@ -12,3 +12,8 @@ shout("tood")
 
 # Function defining is when you create the function. it exists but does not executes result.
 # Function calling is when you use the function.
+
+def introduce(first,last):
+    print(first,last)
+
+introduce(last="Ahmed",first="Muktar")
