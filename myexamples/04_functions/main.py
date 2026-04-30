@@ -56,3 +56,36 @@ def payment_details(**info):
     return info
 
 print(payment_details(method="Evc",sender_phone="1234788",receiver_phone="12349104",amount=111,datetime="05-05-2025 14:30"))
+
+count = 0
+
+def increment():
+    global count
+    count +=1
+
+increment()
+increment()
+
+print(count)
+
+
+def outer():
+    x = 0
+    def inner():
+        nonlocal x
+        x+=1
+    inner()
+    print(x)
+
+outer()
+outer()
+
+
+total = 100
+
+def demo():
+    total = 5
+    print(total)
+
+demo() # this prints local variable total value because it's inside the function and not declared as global
+print(total) # this prints global variable total value
