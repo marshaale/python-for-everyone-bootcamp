@@ -22,3 +22,8 @@ with open("hello.txt", "w", encoding="utf-8") as f:
 
 with open("hello.txt", "r", encoding="utf-8") as f:
     print(f.read())
+
+with open('log.txt','a',encoding='utf-8') as f:
+    f.write('ERROR: Api key is missing\n')
+    f.write('INFO: token expired\n')
+    f.write('WARNING: datetime')

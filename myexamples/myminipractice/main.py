@@ -14,3 +14,15 @@ print(data)
 with open('greeting.txt','w',encoding='utf-8') as f:
     f.write('Marshaale\n')
     f.write(str(datetime.datetime.now()))
+
+with open('log.txt','a',encoding='utf-8') as f:
+    f.write('Marshaale\n')
+
+with open('log.txt','a',encoding='utf-8') as f:
+    f.write('Marshaale\n')
+
+with open('log.txt','r',encoding='utf-8') as f:
+    print(f.read())
+
+# W wipes previous content or overrides and write.
+# A adds previous previous and new content.
