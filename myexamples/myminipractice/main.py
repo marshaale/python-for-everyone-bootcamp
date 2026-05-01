@@ -26,3 +26,19 @@ with open('log.txt','r',encoding='utf-8') as f:
 
 # W wipes previous content or overrides and write.
 # A adds previous previous and new content.
+
+
+while True:
+    try:
+        number = int(input('Enter a number: '))
+        break
+    except:
+        print('Please enter a number')
+
+try:
+    with open('exercises.txt','r',encoding='utf-8') as f:
+        print(f.read())
+except FileNotFoundError:
+    print('File exercises.txt does not exists')
+finally:
+    print('Completed file reading')

@@ -27,3 +27,15 @@ with open('log.txt','a',encoding='utf-8') as f:
     f.write('ERROR: Api key is missing\n')
     f.write('INFO: token expired\n')
     f.write('WARNING: datetime')
+
+
+def divide(a,b):
+    try:
+        return a/b
+    except ZeroDivisionError as e:
+        print("Zero division error")
+    finally:
+        print('Script completed')
+
+print(divide(2,4)) 
+print(divide(4,0))
