@@ -7,6 +7,10 @@ with open('sample.txt','r',encoding='utf-8') as f:
     print("Character count:",len(content))
 
 from pathlib import Path
-
+import datetime
 data = Path('sample.txt').read_text()
 print(data)
+
+with open('greeting.txt','w',encoding='utf-8') as f:
+    f.write('Marshaale\n')
+    f.write(str(datetime.datetime.now()))
