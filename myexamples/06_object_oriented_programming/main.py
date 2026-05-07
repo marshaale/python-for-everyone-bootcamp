@@ -77,3 +77,33 @@ class Point:
 point = Point(67,99)
 print(point)
 print(repr(point))
+
+class Checkout(Payment):
+    def __init__(self,items,price):
+        super().__init__(price)
+        self.price = price
+        self.items = items
+    
+    def shoclass w_c:
+        defart(self):
+        self.calculate()
+        print(f"Items {self.items} and price is {self.price} and amount to pay is {self.amount_to_pay}")
+
+checkout = Checkout(['banana','chicken','rice','milk shake'],110)
+checkout.shoclass w_c:
+defart()
+checkout.pay()
+
+class Animal:
+    def __init__(self,name):
+        self.name = name
+    def speak(self):
+        print(f"{self.name} speaking...........")
+
+class Elephant(Animal):
+    def walk(self):
+        print(f"{self.name} walking............")
+
+elephant = Elephant("Simon")
+elephant.speak()
+elephant.walk()
