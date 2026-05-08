@@ -84,14 +84,12 @@ class Checkout(Payment):
         self.price = price
         self.items = items
     
-    def shoclass w_c:
-        defart(self):
+    def show_cart(self):
         self.calculate()
         print(f"Items {self.items} and price is {self.price} and amount to pay is {self.amount_to_pay}")
 
 checkout = Checkout(['banana','chicken','rice','milk shake'],110)
-checkout.shoclass w_c:
-defart()
+checkout.show_cart()
 checkout.pay()
 
 class Animal:
@@ -107,3 +105,77 @@ class Elephant(Animal):
 elephant = Elephant("Simon")
 elephant.speak()
 elephant.walk()
+
+from dataclasses import dataclass
+
+@dataclass
+class User:
+    name:str
+    is_admin:bool
+
+user = User("User-1",False)
+print(user.name,user.is_admin)
+
+@dataclass
+class Point:
+    x:int
+    y:int
+
+point = Point(3,5)
+print(point)
+
+class Engine:
+    def start(self):
+        return "vroom"
+
+class Car:
+    def __init__(self,name):
+        self.name = name
+        self.engine = Engine()
+    
+    def start(self):
+        return self.engine.start()
+
+car = Car("V-8")
+print(car.start())
+
+@dataclass
+class Book:
+    title:str
+
+class Student:
+    def __init__(self,name):
+        self.name = name
+        self.books = []
+    
+    def add_book(self,title):
+        self.books.append(Book(title))
+    
+    def __str__(self):
+        return f"Student(name={self.name},books={self.books})"
+
+student = Student("Mohan")
+student.add_book("Python")
+student.add_book("Java")
+print(student)
+
+class Grade:
+    def __init__(self,subject,score):
+        self.subject = subject
+        self.score = score
+    
+
+class ExamReport:
+    def __init__(self):
+        self.grades = []
+    
+    def add_grade(self,subject,score):
+        self.grades.append(Grade(subject,score))
+    
+    def avg(self):
+        return sum([grade.score for grade in self.grades]) / len(self.grades)
+
+report = ExamReport()
+report.add_grade("Python",67)
+report.add_grade("English",90)
+print(report.avg())
